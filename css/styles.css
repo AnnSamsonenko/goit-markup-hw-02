@@ -12,6 +12,7 @@
 }
 :root {
   --common-family: 'Roboto', sans-serif;
+  --secondary-family: 'Raleway', sans-serif;
   --brand-color: #2196f3;
   --text-color: #212121;
   --logo-color: #000000;
@@ -26,8 +27,12 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+/*     ===============MAIN PAGE=============    */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-family);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -43,21 +48,21 @@ body {
   background-color: #000000; /* ВРЕМЕННО*/
 }
 
-.headline-link {
-  text-decoration: none;
+.head-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
 }
-.headline-link:hover,
-.headline-link:focus {
+.head-link:hover,
+.head-link:focus {
   color: var(--brand-color);
 }
 .contacts {
   color: var(--shadow-color);
 }
+/*     ===============HERO=============    */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -78,6 +83,7 @@ body {
   color: var(--accent-color);
   background-color: var(--brand-color);
 }
+/*     ===============FEATURES=============    */
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -92,6 +98,7 @@ body {
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }
+/*     ===============TEAM=============    */
 .subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -113,9 +120,11 @@ body {
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }
+/*     ===============FOOTER=============    */
 .footer-address {
   font-weight: 400;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -128,9 +137,8 @@ body {
 .footer-address:focus {
   color: var(--brand-color);
 }
-/*     PORTFOLIO    */
+/*     ===============PORTFOLIO=============    */
 .filter {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -149,7 +157,6 @@ body {
   color: inherit;
 }
 .filter-title {
-  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
