@@ -55,6 +55,9 @@ body {
   letter-spacing: 0.02em;
   color: inherit;
 }
+.head-link.current {
+  color: var(--brand-color);
+}
 .head-link:hover,
 .head-link:focus {
   color: var(--brand-color);
